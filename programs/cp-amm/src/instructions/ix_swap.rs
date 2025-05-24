@@ -11,7 +11,7 @@ use crate::{
     EvtSwap, PoolError,
 };
 
-#[derive(AnchorSerialize, AnchorDeserialize)]
+#[derive(AnchorSerialize, AnchorDeserialize, Debug)]
 pub struct SwapParameters {
     amount_in: u64,
     minimum_amount_out: u64,
